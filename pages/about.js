@@ -2,7 +2,10 @@
 
 function about() {
   return (
-    <>This is About Page</>
+    <>
+    
+    <h1>This is About Page Section</h1>
+    </>
   )
 }
 

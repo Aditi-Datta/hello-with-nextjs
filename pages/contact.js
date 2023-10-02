@@ -2,7 +2,10 @@
 
 function contact() {
   return (
-    <>This is Contact page</>
+    <>
+    
+    <h1>This is Contact page Section</h1>
+    </>
   )
 }
 

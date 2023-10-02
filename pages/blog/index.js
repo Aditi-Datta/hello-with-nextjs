@@ -2,7 +2,10 @@ import React from 'react'
 
 function index() {
   return (
-    <>This is Blog page</>
+    <>
+    
+    <h1>This is Blog page</h1>
+    </>
   )
 }
 
