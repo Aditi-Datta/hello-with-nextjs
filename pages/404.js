@@ -1,11 +1,15 @@
 import Link from "next/link"
-
+import { useRouter } from "next/router"
 
 export default function ErrorPage() {
+
+    const router = useRouter();
+    const handleInput = () => {
+        router.push("/");
+    };
+
     return (
         <>
-       
-
             <div style={{textAlign:'center', marginTop:'10%'}}>
                 <h1>404</h1>
 
@@ -13,7 +17,16 @@ export default function ErrorPage() {
 
                 <p>The page you are looking for might have been removed had its name changed or its temporarily unavailble.</p>
 
+                
                 <Link href="/"> <button>Back to Homepage</button>  </Link>
+
+                <div>
+                <a onClick={() => router.push("/") }> Back to Homepage</a>
+                </div>
+
+                <div>
+                <a onClick={handleInput}>Back to Homepage</a>
+                </div>
             </div>
 
 
