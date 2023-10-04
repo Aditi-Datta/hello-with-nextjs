@@ -1,3 +1,4 @@
+import Link from "next/link"
 
 
 export default function ErrorPage() {
@@ -12,7 +13,7 @@ export default function ErrorPage() {
 
                 <p>The page you are looking for might have been removed had its name changed or its temporarily unavailble.</p>
 
-                <button> <a href="/"> Back to Homepage</a></button>
+                <Link href="/"> <button>Back to Homepage</button>  </Link>
             </div>
 
 
