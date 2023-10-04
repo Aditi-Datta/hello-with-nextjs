@@ -2,6 +2,7 @@
 // import Image from 'next/image'
 // import styles from '../styles/Home.module.css'
 import Link from 'next/link';
+import home from './home';
 
 export default function index() {
   return (
@@ -14,9 +15,7 @@ export default function index() {
               Home
             </Link>
           </li>
-          
           <li>
-
           <Link href="/about">
             About
           </Link>
@@ -36,13 +35,13 @@ export default function index() {
             Product
           </Link>
         </li>
-          
         </ul>
       </nav>
 
 
 
       <h2>Hey this is Aditi Hello from Next App...</h2>
+      <home></home>
     </>
   )
 }
