@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { useRouter } from "next/router"
+import { useEffect } from "react";
 
 export default function ErrorPage() {
 
@@ -7,6 +8,13 @@ export default function ErrorPage() {
     const handleInput = () => {
         router.push("/");
     };
+
+
+    useEffect ( () => {
+        setTimeout( () => {
+            router.push('/');
+        }, 3000);
+    },[]);
 
     return (
         <>
