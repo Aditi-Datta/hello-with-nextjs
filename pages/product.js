@@ -6,7 +6,7 @@ function product() {
   return (
     <>
     <Navbar></Navbar>
-    <h1>Product Page here.</h1>
+    <h1 style={{color: "orange"}}>Product Page here.</h1>
     </>
   )
 }
