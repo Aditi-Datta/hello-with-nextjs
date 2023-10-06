@@ -19,7 +19,7 @@ function index({data}) {
     
     
     {
-      data.map((curElement) => {
+      data.slice(0,5).map((curElement) => {
         return(
           <div key={curElement.id} >
           <h3>{curElement.id}</h3>
