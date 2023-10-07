@@ -36,16 +36,15 @@ export const getStaticProps = async (context) => {
 
 
 function pageno({data}) {
-    // const router = useRouter();
-    // const pageNumber = router.query.pageno;
+    const {id, title, body} = data;
     return (
         <>
         <Navbar></Navbar>
         
-        <div key={data.id} >
-          <h3>{data.id}</h3>
-          <h2>{data.title}</h2>
-          <p>{data.body}</p>
+        <div>
+          <h3>{id}</h3>
+          <h2>{title}</h2>
+          <p>{body}</p>
           </div>
         </>
     )
