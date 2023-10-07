@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import Navbar from '../../components/Navbar'
 
 export const getStaticProps = async () => {
@@ -23,7 +24,11 @@ function index({data}) {
         return(
           <div key={curElement.id} >
           <h3>{curElement.id}</h3>
+
+          <Link href={`/blog/${curElement.id}`}>
           <h2>{curElement.title}</h2>
+          </Link>
+
           </div>
         )
       })
